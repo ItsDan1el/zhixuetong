@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="zhixuetong:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zhixuetong_jar</output-path>
+    <root id="archive" name="zhixuetong.jar">
+      <element id="module-output" name="zhixuetong" />
+    </root>
+  </artifact>
+</component>
