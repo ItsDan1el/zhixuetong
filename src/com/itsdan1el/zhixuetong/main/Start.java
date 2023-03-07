@@ -1,6 +1,6 @@
-package com.itsdan1el.main;
+package com.itsdan1el.zhixuetong.main;
 
-import com.itsdan1el.main.view.MainFrame;
+import com.itsdan1el.zhixuetong.view.MainFrame;
 
 public class Start {
     public static void main(String[] args) {

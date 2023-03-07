@@ -1,4 +1,4 @@
-package com.itsdan1el.main.view;
+package com.itsdan1el.zhixuetong.view;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,11 +26,23 @@ public class MainFrame extends JFrame{
         JMenu homework = new JMenu("作业");
         JMenu daka = new JMenu("打卡任务");
         JMenu announcement = new JMenu("通知");
+        JMenu loginOptions = new JMenu("登陆");
+
         // 一级菜单添加到菜单栏
         menuBar.add(unFinished);
         menuBar.add(homework);
         menuBar.add(daka);
         menuBar.add(announcement);
+        menuBar.add(loginOptions);
+
+        //登陆选项
+        JMenuItem login = new JMenuItem("账号登录");
+        JMenuItem register = new JMenuItem("注册账号");
+
+        loginOptions.add(login);
+        loginOptions.add(register);
+
+
         menuBar.setBackground(c);
         add(menuBar);
         show();
@@ -49,14 +61,16 @@ public class MainFrame extends JFrame{
             @Override
             public void windowClosing(WindowEvent e) {
                 int closeCode = JOptionPane.showConfirmDialog(MainFrame.this, "是否退出智学通？"
-                ,"提示！",JOptionPane.YES_NO_OPTION);
+                        ,"提示！",JOptionPane.YES_NO_OPTION);
                 if(closeCode == JOptionPane.YES_OPTION){
                     System.exit(0);
 
                 }
             }
         });
+
     }
+
 
     public void setPanel(JPanel panel){
         Container c = getContentPane();
