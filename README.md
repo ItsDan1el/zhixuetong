@@ -79,7 +79,7 @@ If nothing of these works, report an issue to [issue tracker](https://github.com
 You can report a bug to the [issue tracker](https://github.com/ItsDan1el/zhixuetong/issues).
 If you have solutions to issues and can help fix bugs, please contact me and I'll make you a contributor of the project.
 
-view `issue-format` when openning a new issue.
+view `issue-format.md` when openning a new issue.
 
 ---
 
