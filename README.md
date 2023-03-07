@@ -9,6 +9,7 @@
 - [Running](#running)
     - [Mac](#mac)
     - [Windows](#windows)
+- [Issue Tracker](#issue-tracker)
 -------
 ## About
 The ZhiXueTong APP is an application made to let Student's in the WFL schools practice their oral English. However, the original app is very buggy so I made this version to make the app more user-friendly.
@@ -72,6 +73,14 @@ If nothing of these works, report an issue to [issue tracker](https://github.com
 If nothing of these works, report an issue to [issue tracker](https://github.com/ItsDan1el/zhixuetong/issues)
 
 -----
+
+## Issue Tracker
+
+You can report a bug to the [issue tracker](https://github.com/ItsDan1el/zhixuetong/issues).
+If you have solutions to issues and can help fix bugs, please contact me and I'll make you a contributor of the project.
+
+---
+
 <sub>This is the end of `README.md` | Copyright 2023 ItsDan1el | Apache License v2.0<sub>
 
 
