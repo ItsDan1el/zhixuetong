@@ -75,12 +75,8 @@ If nothing of these works, report an issue to [issue tracker](https://github.com
 -----
 
 ## Issue Tracker
-
 You can report a bug to the [issue tracker](https://github.com/ItsDan1el/zhixuetong/issues).
 If you have solutions to issues and can help fix bugs, please contact me and I'll make you a contributor of the project.
-
-view `issue-format.md` when openning a new issue.
-
 ---
 
 <sub>This is the end of `README.md` | Copyright 2023 ItsDan1el | Apache License v2.0<sub>
