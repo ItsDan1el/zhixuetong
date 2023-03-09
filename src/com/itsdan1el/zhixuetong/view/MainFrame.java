@@ -1,32 +1,40 @@
 package com.itsdan1el.zhixuetong.view;
 
+import com.itsdan1el.zhixuetong.session.Session;
+import jdk.jfr.internal.tool.Main;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 
 public class MainFrame extends JFrame{
+
+
+
     public MainFrame() {
-        setSize(442, 900);
+        Dimension d = getToolkit().getScreenSize();
+        setSize((int) ((d.width - getWidth())/3.5), (d.height - getHeight()));
         addListener();
         setTitle("世外智学通");
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Image icon = toolkit.getImage("assets/img/logo.png");
         setIconImage(icon);
-        Dimension d = getToolkit().getScreenSize();
+
         setLocation((d.width - getWidth()) / 2, (d.height - getHeight()) / 2);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         Color c = new Color(11, 172, 246);
 
+       JMenuBar menuBar = new JMenuBar();
 
-        JMenuBar menuBar = new JMenuBar();
-
-        JMenu unFinished = new JMenu("待完成");
-        JMenu homework = new JMenu("作业");
-        JMenu daka = new JMenu("打卡任务");
-        JMenu announcement = new JMenu("通知");
-        JMenu loginOptions = new JMenu("登陆");
+       JMenu unFinished = new JMenu("待完成");
+       JMenu homework = new JMenu("作业");
+       JMenu daka = new JMenu("打卡任务");
+       JMenu announcement = new JMenu("通知");
+       JMenu loginOptions = new JMenu("登陆");
 
         // 一级菜单添加到菜单栏
         menuBar.add(unFinished);
@@ -47,12 +55,22 @@ public class MainFrame extends JFrame{
         add(menuBar);
         show();
 
-
         setJMenuBar(menuBar);
 
         setVisible(true);
-    }
 
+
+        login.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MainFrame MainFrame = new MainFrame();
+                LoginDialog ld = new LoginDialog(MainFrame);
+                    ld.setVisible(true);
+
+            }
+        });
+
+        }
 
 
 
@@ -66,6 +84,9 @@ public class MainFrame extends JFrame{
                     System.exit(0);
 
                 }
+                Toolkit toolkit = Toolkit.getDefaultToolkit();
+                Image icon = toolkit.getImage("assets/img/logo.png");
+                setIconImage(icon);
             }
         });
 
@@ -78,5 +99,7 @@ public class MainFrame extends JFrame{
         c.add(panel);
         c.validate();
     }
+
+
 
 }
