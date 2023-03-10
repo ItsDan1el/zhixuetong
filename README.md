@@ -64,7 +64,7 @@ If nothing of these works, report an issue to [issue tracker](https://github.com
 3. check Java version (needs to be Java8 or above)
 4. check the default opening application
 5. Try starting it with CMD
-    1. open terminal
+    1. open CMD
     2. drag the file to desktop
     3. use command `cd desktop`
     4. then use command `java -jar <filename>.jar`
